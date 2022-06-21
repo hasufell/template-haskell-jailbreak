@@ -1,0 +1,46 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.5.
+--
+-- see: https://github.com/sol/hpack
+
+name:           template-haskell-jailbreak
+version:        0.0.1
+category:       Development
+stability:      alpha
+homepage:       https://github.com/TerrorJack/template-haskell-jailbreak#readme
+bug-reports:    https://github.com/TerrorJack/template-haskell-jailbreak/issues
+maintainer:     Shao Cheng <astrohavoc@gmail.com>
+copyright:      (c) 2018 Shao Cheng
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    LICENSE
+    ../README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/TerrorJack/template-haskell-jailbreak
+
+library
+  exposed-modules:
+      Language.Haskell.TH.Jailbreak
+      Language.Haskell.TH.Jailbreak.Orphans
+  other-modules:
+      Paths_template_haskell_jailbreak
+  hs-source-dirs:
+      src
+  other-extensions:
+      RecordWildCards
+      StrictData
+  ghc-options: -Wall
+  build-depends:
+      base
+    , binary
+    , ghc
+    , ghc-paths
+    , process
+    , template-haskell
+  default-language: Haskell2010
